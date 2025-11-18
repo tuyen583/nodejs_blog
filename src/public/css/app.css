@@ -1,0 +1,48 @@
+.mt-4 {
+  margin-top: 2rem;
+}
+
+.card-course-item {
+  margin-bottom: 24px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card-course-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+.card-course-item a {
+  text-decoration: none;
+  color: inherit;
+}
+.card-course-item a:hover {
+  color: inherit;
+}
+.card-course-item .card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+.card-course-item .card-body {
+  padding: 1.25rem;
+}
+.card-course-item .card-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: #333;
+  line-height: 1.4;
+}
+.card-course-item .card-text {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+.card-course-item .btn {
+  width: 100%;
+  font-weight: 500;
+}
+
+/*# sourceMappingURL=app.css.map */
