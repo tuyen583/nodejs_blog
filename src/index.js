@@ -4,6 +4,8 @@ const express = require('express');
 const app = express();
 const port = 3000;
 const morgan = require('morgan');
+const methodOverride = require('method-override');
+app.use(methodOverride('_method'));
 
 const route = require('./route');
 const db = require('./config/db');
@@ -23,6 +25,9 @@ app.engine(
   'hbs',
   engine({
     extname: '.hbs',
+    helpers: {
+      sum: (a, b) => a + b,
+    }
   }),
 );
 app.set('view engine', 'hbs');

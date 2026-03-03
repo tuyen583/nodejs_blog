@@ -4,7 +4,13 @@
 
     router.get('/create', coursesController.create);
     router.post('/store', coursesController.store);
-    router.get('/:slug', coursesController.show);
+    router.get('/:id/edit', coursesController.edit);
+    router.post('/handle-form-actions', coursesController.handleFormActions);
+    router.put('/:id', coursesController.update);
+    router.patch('/:id/restore', coursesController.restore);
+    router.delete('/:id', coursesController.delete);
+    router.delete('/:id/force', coursesController.forceDelete);
+    router.get('/:slug', coursesController.show); 
     router.get('/', coursesController.index);
 
 

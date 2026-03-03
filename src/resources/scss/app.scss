@@ -54,3 +54,13 @@
         font-weight: 500;
     }
 }
+
+// Dropdown hover effect
+.navbar .nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+}
+.checkbox-select-all-option {
+    width: 140px;
+    margin: 0 16px;
+}
